@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzay Keşifleri</title>  
+    <link rel ="stylesheet" href ="style.css"> 
+</head>
+<body>
+    <h1 > Uzayın Derinliklerine Yolculuk </h1>
+    <p> Gezegenleri ,yıldızları ve astronotları birlikte keşfedelim </p>
+    <section id=" gezegenler">
+        <h2> Gezegenler </h2>
+        <ul>
+
+            <li> Merkür- Güneşe en yakın gezegen </li>
+            <li> jupiter - En büyük gezegen </li>
+            <li> Uranüs - Yana yatık dönen ilginç gezegen </li>
+        </ul>
+    </section>
+    <section id= "astronotlar "> 
+
+        <h2> Astronotlar </h2>
+        <p > Uzay keşiflerinin cesur kahramanları : astronotlar  evrenin bilinmeyenini araştır mak için görev yaparlar .</p>
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Astronaut-EVA.jpg/800px-Astronaut-EVA.jpg" alt="Uzayda görev yapan astronot" width="400">
+
+    </section>
+    <div id="sky"></div>
+
+  <script>
+    for (let i = 0; i < 100; i++) {
+      let star = document.createElement("div");
+      star.className = "stars";
+      star.style.top = Math.random() * window.innerHeight + "px";
+      star.style.left = Math.random() * window.innerWidth + "px";
+      document.getElementById("sky").appendChild(star);
+    }
+  </script>
+
+s
+
+<audio id="muzik" loop>
+  <source src="gece-temasi.mp3" type="audio/mpeg">
+  Tarayıcınız ses öğesini desteklemiyor.
+</audio>
+<button onclick="document.getElementById('muzik').play()">Müziği Başlat 🎵</button>
+
+
+
+    <footer>
+        <p>&copy; 2025 Uzay Keşifleri Projesi | Hazırlayan : Merve Tanrıverdi      
+        </p>
+        <p> 
+            <a href =" https:// //github.com/MerveTanriverdi" target="_blank">GitHub Profilim</a> |
+             <a href="https://www.nasa.gov/" target="_blank">NASA Resmi Sitesi</a>
+
+        </p>
+        
+    </footer>
+</body>
+</html>
